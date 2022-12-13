@@ -10,15 +10,13 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
+  
   <body>
     
   </body>
     <div class="ui small inverted menu">
     <div class= "ui container"> 
-      <a class="item">
-        Chatroom
-      </a>
+      <%= link_to "Chatroom", root_path, class: "item" %>
       <%= render 'layouts/navigation' %>
     </div>
   </div>
